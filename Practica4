@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    float euros,conver;
+    printf("Introduce los euros que quieres convertir\n");
+    scanf("%f",&euros);
+    conver=euros*166.386;
+    printf("%.2f euros equivalen a %.2f pesetas",euros,conver);
+
+}
