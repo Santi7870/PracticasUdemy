@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int Numeros[10] = {5,2,18,20,-15,14,65,-45,15,7};
+    int maximo = Numeros[0];
+    int minimo = Numeros[0];
+
+    for (int i=1;i<10;i++){
+        if (Numeros[i] > maximo){
+            maximo = Numeros[i];
+        }
+
+        if (Numeros[i] < minimo){
+            minimo = Numeros[i];
+        }
+    }
+
+    printf("Valor maximo: %d\nValor minimo: %d",maximo,minimo);
+}
