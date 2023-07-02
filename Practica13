@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int habitantes[3][4] = {{4,110,140,200},{6,125,140,230},{8,117,122,225}};
+    int sumaTempBaja = 0, sumaTempMedia = 0, sumaTempAlta = 0;
+
+    for (int i=0; i<3; i++){
+        for (int j=1; j<4; j++){
+            if (j == 1){
+                sumaTempBaja = sumaTempBaja + habitantes[i][j];
+            }
+            if (j == 2){
+                sumaTempMedia = sumaTempMedia + habitantes[i][j];
+            }
+            if (j == 3){
+                sumaTempAlta = sumaTempAlta + habitantes[i][j];
+            }
+        }
+    }
+
+    float promTempBaja = sumaTempBaja/3;
+    float promTempMedia = sumaTempMedia/3;
+    float promTempAlta = sumaTempAlta/3;
+
+    printf("Promedio temporada baja: %.2f\nPromedio temporada media: %.2f\nPromedio temporada alta: %.2f",promTempBaja,promTempMedia,promTempAlta);
+}
